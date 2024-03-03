@@ -26,8 +26,17 @@ namespace Dictionary
         }
         private void AdminButton_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage loginPage = new LoginPage();
-            this.Content = loginPage;
+            mainFrame.Navigate(new Uri("LoginPage.xaml", UriKind.Relative));
+            HideMainWindowContent();
+            DisableNavigation();
+        }
+        private void HideMainWindowContent()
+        {
+            mainContentPanel.Visibility = Visibility.Collapsed;
+        }
+        private void DisableNavigation()
+        {
+            mainFrame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
         }
     }
 }

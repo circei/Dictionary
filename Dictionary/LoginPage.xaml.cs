@@ -74,14 +74,14 @@ namespace Dictionary
             if (login)
             {
                 lblMessage.Text = "Login successful!";
+                NavigationService.Navigate(new Uri("AdminPage.xaml", UriKind.Relative));
             }
             else
             {
                 lblMessage.Text = "Invalid username or password. Please try again.";
             }
-            /*LoginPage loginPage = new LoginPage();
-            this.Content = loginPage;
-            */
+            
+            
         }
     }
 }
