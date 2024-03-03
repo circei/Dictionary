@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Admin" Width="100" Margin="5" Click="AdminButton_Click"/>
+            <Button Content="Search Words" Width="150" Margin="5"/>
+            <Button Content="Entertainment" Width="120" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
