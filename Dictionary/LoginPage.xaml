@@ -9,6 +9,13 @@
       Title="LoginPage">
 
     <Grid>
-        
+        <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Username:" Margin="10"/>
+            <TextBox x:Name="txtUsername" Margin="10"/>
+            <TextBlock Text="Password:" Margin="10"/>
+            <PasswordBox x:Name="txtPassword" Margin="10"/>
+            <Button Content="Login" Margin="10" Click="LoginButton_Click"/>
+            <TextBlock x:Name="lblMessage" Margin="10" HorizontalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Page>
